@@ -1,13 +1,13 @@
 import React from 'react';
-import Navbar from "./navbar";
+import Navbar from "./navbar"
 
-export default class Home extends React.Component {
+export default class Gallery extends React.Component {
   render() {
     return (
       <div>
         <Navbar />
         <h1>
-          Home Page
+          Gallery Page
         </h1>
       </div>
     );
