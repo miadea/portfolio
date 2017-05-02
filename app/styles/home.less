@@ -1,0 +1,24 @@
+.home-page {
+  background: url("/public/images/ring2.jpg") no-repeat left top;
+  background-size: cover;
+  min-height: 100vh;
+  .name {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    h1 {
+      color: white;
+      font-size: 4rem;
+      letter-spacing: 1rem;
+      position: relative;
+      bottom: -325px;
+      transition: bottom 2s, opacity 2s;
+      opacity: 0;
+      &.title {
+        bottom: -125px;
+        opacity: 1;
+      }
+    }
+  }
+}
