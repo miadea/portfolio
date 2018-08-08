@@ -33,8 +33,8 @@ export default class Resume extends React.Component {
     }
     return (
       <div className="resume-page">
-        <a className="download" href="./public/resume.pdf" download >Download</a>
-        <PDF className="pdf" file="./public/resume.pdf" onDocumentComplete={this.onDocumentComplete} onPageComplete={this.onPageComplete} page={this.state.page} />
+        <a className="download" href="./public/resume-1.pdf" download >Download</a>
+        <PDF className="pdf" file="./public/resume-1.pdf" onDocumentComplete={this.onDocumentComplete} onPageComplete={this.onPageComplete} page={this.state.page} />
         {nextButton}
         {backButton}
       </div>

@@ -5,13 +5,19 @@ export default class About extends React.Component {
     return (
       <div className="about-page">
         <div className='content'>
-          <img src="public/images/song5.gif"/>
-          <p>My name is Emma and I am currently a student at Appalachian State
-          University. I am studying to get my degree in Commercial Photography.
-          I have worked as an assistant wedding photographer for three years and
-          plan to become a product photographer. I also enjoy digital painting
-          and take commissions when I am able. I have worked as a web designer
-          for marketing websites.</p>
+          <img src="public/images/noxx.jpg"/>
+          <p>My name is Emma and I love photography. I have been taking photos
+          with my mom since I was little and she continues to inspire me. I am
+          currently studying Commercial Photography at Appalachian State
+          University. Every day I learn something new and exciting about the
+          craft, and I use the skills I have learned to keep pushing myself.</p>
+
+          <p>I have also learned a lot in the business itself, I worked as an
+          assistant wedding photographer for several years. It was wonderful
+          to get real experience with clients and the process of making photographs
+          that would be remembered for years. Working with web development is
+          also fun and challenging. I enjoy designing and implementing various
+          layouts, I find it is another art form all in itself.</p>
         </div>
       </div>
     );
