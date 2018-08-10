@@ -4,13 +4,13 @@ import Gallery from 'react-grid-gallery';
 export default class _Gallery extends React.Component {
   constructor() {
     super()
-    this.state = { tag: 'Wedding' }
+    this.state = { tag: 'Product' }
   }
   render() {
     return (
       <div className="gallery-page">
         <div className="nav">
-          {['Wedding', 'Portrait', 'Interior', 'Product', 'Nature'].map(tag => {
+          {[ 'Product', 'Wedding', 'Interior', 'Portrait', 'Nature'].map(tag => {
             let className = tag == this.state.tag ? 'link active' : 'link'
             return <div className={className} key={tag}>
               <a href='' onClick={(e) => this.onTag(e, tag)}>{tag}</a>
@@ -75,6 +75,34 @@ const images = [
  {
          src: "https://c1.staticflickr.com/1/931/43615989142_350af41c7a_h.jpg",
          thumbnail: "https://c1.staticflickr.com/1/931/43615989142_350af41c7a_h.jpg",
+         thumbnailWidth: 250,
+         thumbnailHeight: 174,
+         catigories: ['Product']
+ },
+ {
+         src: "https://c1.staticflickr.com/1/851/30086953708_e5756c1f2d_h.jpg",
+         thumbnail: "https://c1.staticflickr.com/1/851/30086953708_e5756c1f2d_h.jpg",
+         thumbnailWidth: 130,
+         thumbnailHeight: 174,
+         catigories: ['Product']
+ },
+ {
+         src: "https://c1.staticflickr.com/2/1815/29017808357_75a803d05d_h.jpg",
+         thumbnail: "https://c1.staticflickr.com/2/1815/29017808357_75a803d05d_h.jpg",
+         thumbnailWidth: 150,
+         thumbnailHeight: 174,
+         catigories: ['Product']
+ },
+ {
+         src: "https://c1.staticflickr.com/1/852/43907499162_1a80d192a5_h.jpg",
+         thumbnail: "https://c1.staticflickr.com/1/852/43907499162_1a80d192a5_h.jpg",
+         thumbnailWidth: 230,
+         thumbnailHeight: 174,
+         catigories: ['Product']
+ },
+ {
+         src: "https://c1.staticflickr.com/2/1837/43907499202_ac5a1afb8a_h.jpg",
+         thumbnail: "https://c1.staticflickr.com/2/1837/43907499202_ac5a1afb8a_h.jpg",
          thumbnailWidth: 250,
          thumbnailHeight: 174,
          catigories: ['Product']
@@ -474,23 +502,9 @@ const images = [
          catigories: ['Wedding']
  },
  {
-         src: "https://c1.staticflickr.com/1/852/43661105951_46032e5ee4_h.jpg",
-         thumbnail: "https://c1.staticflickr.com/1/852/43661105951_46032e5ee4_h.jpg",
+         src: "https://c1.staticflickr.com/1/933/28773122587_d66e4af432_h.jpg",
+         thumbnail: "https://c1.staticflickr.com/1/933/28773122587_d66e4af432_h.jpg",
          thumbnailWidth: 240,
-         thumbnailHeight: 174,
-         catigories: ['Interior']
- },
- {
-         src: "https://c1.staticflickr.com/1/942/28773077877_4d67649b8f_c.jpg",
-         thumbnail: "https://c1.staticflickr.com/1/942/28773077877_4d67649b8f_c.jpg",
-         thumbnailWidth: 120,
-         thumbnailHeight: 174,
-         catigories: ['Interior']
- },
- {
-         src: "https://c1.staticflickr.com/1/936/43661104491_6b583a444d_h.jpg",
-         thumbnail: "https://c1.staticflickr.com/1/936/43661104491_6b583a444d_h.jpg",
-         thumbnailWidth: 250,
          thumbnailHeight: 174,
          catigories: ['Interior']
  },
@@ -502,16 +516,30 @@ const images = [
          catigories: ['Interior']
  },
  {
-         src: "https://c1.staticflickr.com/1/845/28773122867_216c200197_h.jpg",
-         thumbnail: "https://c1.staticflickr.com/1/845/28773122867_216c200197_h.jpg",
-         thumbnailWidth: 260,
+         src: "https://c1.staticflickr.com/1/936/43661104491_6b583a444d_h.jpg",
+         thumbnail: "https://c1.staticflickr.com/1/936/43661104491_6b583a444d_h.jpg",
+         thumbnailWidth: 250,
          thumbnailHeight: 174,
          catigories: ['Interior']
  },
  {
-         src: "https://c1.staticflickr.com/1/933/28773122587_d66e4af432_h.jpg",
-         thumbnail: "https://c1.staticflickr.com/1/933/28773122587_d66e4af432_h.jpg",
+         src: "https://c1.staticflickr.com/1/942/28773077877_4d67649b8f_c.jpg",
+         thumbnail: "https://c1.staticflickr.com/1/942/28773077877_4d67649b8f_c.jpg",
+         thumbnailWidth: 120,
+         thumbnailHeight: 174,
+         catigories: ['Interior']
+ },
+ {
+         src: "https://c1.staticflickr.com/1/852/43661105951_46032e5ee4_h.jpg",
+         thumbnail: "https://c1.staticflickr.com/1/852/43661105951_46032e5ee4_h.jpg",
          thumbnailWidth: 240,
+         thumbnailHeight: 174,
+         catigories: ['Interior']
+ },
+ {
+         src: "https://c1.staticflickr.com/1/845/28773122867_216c200197_h.jpg",
+         thumbnail: "https://c1.staticflickr.com/1/845/28773122867_216c200197_h.jpg",
+         thumbnailWidth: 260,
          thumbnailHeight: 174,
          catigories: ['Interior']
  },
