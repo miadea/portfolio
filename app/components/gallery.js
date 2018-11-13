@@ -10,7 +10,7 @@ export default class _Gallery extends React.Component {
     return (
       <div className="gallery-page">
         <div className="nav">
-          {[ 'Product', 'Wedding', 'Interior', 'Portrait', 'Nature'].map(tag => {
+          {[ 'Product', 'Interior', 'Portrait', 'Nature'].map(tag => {
             let className = tag == this.state.tag ? 'link active' : 'link'
             return <div className={className} key={tag}>
               <a href='' onClick={(e) => this.onTag(e, tag)}>{tag}</a>
@@ -31,7 +31,6 @@ export default class _Gallery extends React.Component {
 
 
 const getImages = (tag) => {
-  if (!tag) return images;
   return images.filter(({catigories = []}) => catigories.includes(tag))
 }
 
